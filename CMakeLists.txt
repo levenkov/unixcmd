@@ -21,3 +21,5 @@ target_link_libraries(unixcmd Qt6::Widgets Qt6::Quick Qt6::Core Qt6::Network)
 
 target_link_libraries(unixcmd "-framework SystemConfiguration")
 target_link_libraries(unixcmd "-framework GSS")
+
+set_target_properties(unixcmd PROPERTIES QUL_DEFAULT_FONT_FAMILY "Arial")

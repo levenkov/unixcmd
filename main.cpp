@@ -1,11 +1,13 @@
 #include <iostream>
-#include <QApplication>
+#include <QFont>
+#include <QGuiApplication>
 #include <QQmlApplicationEngine>
 
 int main(int argc, char* argv[]) {
-    std::cout << "Foo" << std::endl;
+    QFont font( "Arial" );
+    QGuiApplication::setFont( font );
 
-    QApplication app(argc, argv);
+    QGuiApplication app(argc, argv);
     QQmlApplicationEngine engine;
 
     engine.load(QUrl(QStringLiteral("qrc:/qml/main.qml")));
