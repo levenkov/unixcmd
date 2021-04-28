@@ -18,13 +18,16 @@ class UnixCmdConan(ConanFile):
     requires = 'qt/5.15.2'
 
     def configure(self):
-        self.options['qt'].shared = True
+        self.options['*'].shared = True
         self.options['qt'].qtdeclarative = True
         self.options['qt'].qtquickcontrols2 = True
     #    self.options['qt'].qttools = True
     #    self.options['qt'].qtsvg = True
     #    self.options['qt'].qttranslations = True
     #    self.options['qt'].with_freetype = False
+        self.options['qt'].with_mysql = False
+        self.options['qt'].qt3d = False
+        self.options['qt'].opengl = 'no'
 
     def build(self):
         build_env = RunEnvironment(self)

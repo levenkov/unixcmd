@@ -15,7 +15,7 @@ if(USE_CONAN)
     conan_basic_setup(KEEP_RPATHS)
 endif()
 
-find_package(qt COMPONENTS Widgets Qml Quick Core Network REQUIRED)
+find_package(Qt5 COMPONENTS Widgets Qml Quick Core Network REQUIRED)
 
 set(SOURCES main.cpp qml/main.qml)
 
@@ -23,7 +23,7 @@ qt5_add_resources(SOURCES qml.qrc)
 
 add_executable(unixcmd ${SOURCES})
 
-target_link_libraries(unixcmd Qt5Widgets Qt5Quick Qt5Core Qt5Qml)
+target_link_libraries(unixcmd Qt::Widgets Qt::Quick Qt::Core Qt::Qml)
 
 target_link_libraries(unixcmd "-framework SystemConfiguration")
 target_link_libraries(unixcmd "-framework GSS")

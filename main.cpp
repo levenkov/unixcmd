@@ -1,5 +1,4 @@
 #include <iostream>
-#include <QFont>
 #include <QApplication>
 #include <QQmlApplicationEngine>
 
