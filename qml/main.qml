@@ -41,7 +41,6 @@ ApplicationWindow
             }
 
             Label {
-                color: "#00FF00"
                 text: "Title"
                 font.family: "Arial"
                 font.pointSize: 13
@@ -60,5 +59,9 @@ ApplicationWindow
     StackView {
         id: stack
         anchors.fill: parent
+
+        Text {
+            text: "Fancy font"
+        }
     }
 }
