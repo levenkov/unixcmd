@@ -5,63 +5,71 @@ import QtQuick.Layouts 1.15
 ApplicationWindow
 {
     visible: true
-    title: "UnixCMD"
+    title: "UnixCMD 111"
+    width: 400
+    height: 400
 
-    menuBar: MenuBar {
-        Menu {
-            title: qsTr("&File")
-            Action { text: qsTr("&New...") }
-            Action { text: qsTr("&Open...") }
-            Action { text: qsTr("&Save") }
-            Action { text: qsTr("Save &As...") }
-            MenuSeparator { }
-            Action { text: qsTr("&Quit") }
-        }
-        Menu {
-            title: qsTr("&Edit")
-            Action { text: qsTr("Cu&t") }
-            Action { text: qsTr("&Copy") }
-            Action { text: qsTr("&Paste") }
-        }
-        Menu {
-            title: qsTr("&Help")
-            Action { text: qsTr("&About") }
-        }
-    }
+    //menuBar: MenuBar {
+    //    Menu {
+    //        title: qsTr("&File")
+    //        Action { text: qsTr("&New...") }
+    //        Action { text: qsTr("&Open...") }
+    //        Action { text: qsTr("&Save") }
+    //        Action { text: qsTr("Save &As...") }
+    //        MenuSeparator { }
+    //        Action { text: qsTr("&Quit") }
+    //    }
+    //    Menu {
+    //        title: qsTr("&Edit")
+    //        Action { text: qsTr("Cu&t") }
+    //        Action { text: qsTr("&Copy") }
+    //        Action { text: qsTr("&Paste") }
+    //    }
+    //    Menu {
+    //        title: qsTr("&Help")
+    //        Action { text: qsTr("&About") }
+    //    }
+    //}
 
-    header: ToolBar {
-    }
+    //header: ToolBar {
+    //}
 
-    footer: ToolBar {
-        RowLayout {
-            anchors.fill: parent
+    //footer: ToolBar {
+    //    RowLayout {
+    //        anchors.fill: parent
 
-            ToolButton {
-                text: qsTr("‹")
-            }
+    //        ToolButton {
+    //            text: qsTr("‹")
+    //        }
 
-            Label {
-                text: "Title"
-                font.family: "Arial"
-                font.pointSize: 13
-                elide: Label.ElideRight
-                horizontalAlignment: Qt.AlignHCenter
-                verticalAlignment: Qt.AlignVCenter
-                Layout.fillWidth: true
-            }
+    //        Label {
+    //            text: "Title"
+    //            font.family: "Arial"
+    //            font.pointSize: 13
+    //            elide: Label.ElideRight
+    //            horizontalAlignment: Qt.AlignHCenter
+    //            verticalAlignment: Qt.AlignVCenter
+    //            Layout.fillWidth: true
+    //        }
 
-            ToolButton {
-                text: "⋮"
-            }
-        }
-    }
+    //        ToolButton {
+    //            text: "⋮"
+    //        }
+    //    }
+    //}
 
-    StackView {
-        id: stack
-        anchors.fill: parent
+    //StackView {
+    //    id: stack
+    //    anchors.fill: parent
 
-        Text {
-            text: "Fancy font"
-        }
+    //    Text {
+    //        text: "Fancy font"
+    //    }
+    //}
+
+    Label {
+        anchors.centerIn: parent
+        text: qsTr("Hello World!")
+        font.pixelSize: 14
     }
 }

@@ -1,0 +1,18 @@
+{
+ "description": "This file is read by androiddeployqt",
+ "qt": "/Users/alev/Work/personal/unixcmd-build/qt",
+ "sdk": "/Users/alev/Library/Android/sdk",
+ "ndk": "/Users/alev/.conan/data/android-ndk/r22/_/_/package/46f53f156846659bf39ad6675fa0ee8156e859fe",
+ "toolchain-prefix": "llvm",
+ "tool-prefix": "llvm",
+ "ndk-host": "darwin-x86_64",
+ "architectures": { "armeabi-v7a": "arm-linux-androideabi" },
+ "application-binary": "unixcmd",
+ "android-package": "unixcmd",
+ "qml-root-path": "/Users/alev/Work/personal/unixcmd/qml",
+ "sdkBuildToolsRevision": "29.0.2",
+ "android-package-source-directory": "/Users/alev/Work/personal/unixcmd/android/android",
+ "android-extra-libs": "",
+  "stdcpp-path": "/Users/alev/.conan/data/android-ndk/r22/_/_/package/46f53f156846659bf39ad6675fa0ee8156e859fe/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib"
+}
+
